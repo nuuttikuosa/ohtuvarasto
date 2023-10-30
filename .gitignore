@@ -1,0 +1,6 @@
+#määrittelet, että repositorion juurihakemistossa olevat tiedostot, 
+#joiden pääte on tmp, ja hakemistot joiden nimi on __pycache__ ja 
+#.pytest_cache ignoroidaan
+*.tmp
+.pytest_cache
+__pycache__
