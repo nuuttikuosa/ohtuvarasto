@@ -14,7 +14,8 @@ class Varasto:
             self.saldo = alku_saldo
         else:
             # täyteen ja ylimäärä hukkaan!
-            self.saldo = tilavuus
+            #self.saldo = tilavuus <- bugi
+            self.saldo = self.tilavuus
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
@@ -33,7 +34,8 @@ class Varasto:
             return 0.0
         if maara > self.saldo:
             kaikki_mita_voidaan = self.saldo
-            self.saldo = 0.0
+            #self.saldo = 0.0 <- bugi
+            self.saldo = self.tilavuus
 
             return kaikki_mita_voidaan
 
