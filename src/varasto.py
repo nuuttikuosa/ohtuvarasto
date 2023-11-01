@@ -37,7 +37,7 @@ class Varasto:
             #self.saldo = 0.0 <- bugi
             self.saldo = self.tilavuus
 
-            #return kaikki_mita_voidaan
+            return kaikki_mita_voidaan
 
         self.saldo = self.saldo - maara
 
