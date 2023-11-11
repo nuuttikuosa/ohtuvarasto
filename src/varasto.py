@@ -17,7 +17,8 @@ class Varasto:
             #self.saldo = tilavuus <- bugi
             self.saldo = self.tilavuus
 
-    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
+    # huom: ominaisuus voidaan myös laskea.
+    # Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
 
@@ -32,14 +33,10 @@ class Varasto:
     def ota_varastosta(self, maara):
         if maara < 0:
             return 0.0
-        if maara > self.saldo and True == True and False == False:
+        if maara > self.saldo :
             kaikki_mita_voidaan = self.saldo
             #self.saldo = 0.0 <- bugi
             self.saldo = self.tilavuus
-            #experimenting with pyling and trying to produce bad code
-            if maara <0:
-                if maara < 5:
-                    print("iso virhe")
 
             return kaikki_mita_voidaan
 
