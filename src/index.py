@@ -32,7 +32,7 @@ def more_tests():
     olutta.lisaa_varastoon(1000.0)
     print(f"Olutvarasto: {olutta}")
 
-    print(f"Olutvarasto: {olutta}")
+    print(f"Olut-varasto: {olutta}")
     print("olutta.ota_varastosta(1000.0)")
     saatiin = olutta.ota_varastosta(1000.0)
     print(f"saatiin {saatiin}")
